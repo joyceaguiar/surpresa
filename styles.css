@@ -1,0 +1,95 @@
+/* Resetando margens e padding para evitar quebras no layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor do fundo e fonte */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E8D0F5; /* Cor lilás suave de fundo */
+    color: #5F3F8C; /* Cor lilás mais escuro para o texto */
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Título com fonte cursiva e animação de fade-in */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #5F3F8C; /* Cor lilás mais escuro para o título */
+    text-align: center;
+    font-size: 3em;
+    margin: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    font-family: 'Dancing Script';
+    color: #9A7BB5; /* Cor lilás pastel mais claro */
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out 1s; /* Atrasando a animação do título */
+}
+
+#imagem-buque {
+    text-align: center;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-in-out 2s; /* Imagem aparece com um delay */
+}
+
+.img-buque {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover na imagem */
+.img-buque:hover {
+    transform: scale(1.05); /* Imagem cresce um pouco ao passar o mouse */
+}
+
+/* Estilo para os ícones sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #9A7BB5; /* Cor lilás pastel para os ícones */
+    font-size: 2em;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito de hover nos ícones sociais */
+.social-icon:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+    color: #B8A2D9; /* Muda para lilás mais claro no hover */
+}
+
+/* Animação para os elementos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #B8A2D9; /* Cor lilás mais claro para o rodapé */
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+}
